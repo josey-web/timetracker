@@ -1,0 +1,431 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+:root {
+  /* /Primary colours*/
+
+--Blue: hsl(246, 80%, 60%);
+--LightRed_work: hsl(15, 100%, 70%);
+--SoftBlue_play: hsl(195, 74%, 62%);
+--LightRed_study: hsl(348, 100%, 68%);
+--LimeGreen_exercise: hsl(145, 58%, 55%);
+--Violet_social: hsl(264, 64%, 52%);
+--SoftOrange_selfcare: hsl(43, 84%, 65%);
+
+  /* /Neutral colours*/
+
+--VeryDarkBlue: hsl(226, 43%, 10%);
+--DarkBlue: hsl(235, 46%, 20%);
+--DesaturatedBlue: hsl(235, 45%, 61%);
+--PaleBlue: hsl(236, 100%, 87%);
+--white: hsl(0, 0%, 100%);
+--ash: hsla(0, 0%, 87%, 0.582);
+--ash-300: hsla(0, 0%, 87%, 0.74);
+
+  --ff-primary: "Rubik", sans-serif;
+ 
+  --fw-400: 500;
+  --fw-700: 600;
+
+  --fs-300: 0.6875rem;
+  --fs-400: 0.8125rem;
+  --fs-500: 1.25rem;
+}
+
+
+*, ::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+}
+
+
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff-primary);
+  color: var(--white);
+  min-height: 100vh;
+  background: var(--VeryDarkBlue);
+}
+
+.test {
+  font-size: var(--fs-400);
+  /*padding: 2rem;
+  */border-radius: 0.58rem;
+  /*box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
+   */
+
+}
+
+
+.test:nth-child(1) {
+  background-color: var(--DarkBlue);
+  border-radius: 0.58rem;
+
+}
+.test:nth-child(2) {
+  background-color: var(--LightRed_work);
+  border-radius: 0.58rem;
+}
+.test:nth-child(3) {
+    background-color: var(--SoftBlue_play);
+    border-radius: 0.58rem;
+}
+.test:nth-child(4) {
+  background-color: var(--LightRed_study);
+  border-radius: 0.58rem;
+
+}
+.test:nth-child(5) {
+    background-color: var(--LimeGreen_exercise);
+    border-radius: 0.58rem;
+}
+.test:nth-child(6) {
+  background-color: var(--Violet_social);
+  border-radius: 0.58rem;
+}
+.test:nth-child(7) {
+    background-color: var(--SoftOrange_selfcare);
+    border-radius: 0.58rem;
+   
+}
+
+
+.test-Grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* grid-template-rows: repeat(3,auto); */
+  gap: 1.5rem;
+  margin: 20px;
+  /* background-color: aquamarine; */
+  /* margin: 0 auto; */
+  width: 800px;
+
+}
+.grid-span-2 {
+  grid-row: span 2;
+}
+/* .test-subgrid {
+  display: grid;
+    grid-template-rows: subgrid;
+    grid-row: span 2;
+    gap: 5px;
+
+} */
+
+
+
+
+
+.frontBox1 {
+ display: flex;
+ flex-direction: column;
+height: 68%;
+ width: 100%;
+ padding: 20px;
+ background-color: var(--Blue);
+ border-radius: 0.58rem;
+ -webkit-border-radius: 0.58rem;
+ -moz-border-radius: 0.58rem;
+ -ms-border-radius: 0.58rem;
+ -o-border-radius: 0.58rem;
+
+}
+
+.name-report-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 40%;
+}
+
+.frontBox {
+ display: flex;
+ flex-direction: column;
+ text-align: left;
+ align-items: start;
+ 
+ gap: 8px;
+ height: 85%;
+ /*width: 100%;*/
+ padding: 20px;
+ background-color: var(--DarkBlue);
+ border-radius: 0.58em;
+ -webkit-border-radius: 0.58em;
+ -moz-border-radius: 0.58em;
+ -ms-border-radius: 0.58em;
+ -o-border-radius: 0.58em;
+
+}
+
+
+/* .test-subgrid > p, h2 {
+  padding: 1rem;
+} */
+
+/* .flexbox {
+  display: flex;
+  flex-direction: column;
+  justify-self: start;
+} */
+ 
+/* .alloted-time-container {
+  height: 100%;
+} */
+
+
+.time-schedule   {
+margin-top: 18px;
+}
+
+.schedule {
+  font-size: 0.672rem;
+  /* background: blue; */
+  color: var(--PaleBlue);
+  margin-top: 5px;
+  padding: 0.24rem 1.5rem;
+  cursor: pointer;
+}
+
+
+.frontBox .time {
+  font-size: 2.5rem;
+  font-weight: 10;
+   
+}
+.frontBox h4 {
+  font-size: 0.675rem;
+  font-weight: 400;
+  
+   
+}
+.frontBox1 .username {
+  font-size: 2.0rem;
+  font-weight: 10;
+  
+   
+}
+.frontBox .week {
+  font-size: 0.675rem;
+  color: var(--ash);
+  font-weight: 50;
+   
+}
+
+/* .test .time-schedule {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  
+ 
+  height: 125px;
+    padding: 1rem;
+} */
+
+
+.activity {
+  display: flex;
+  flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aqua; */
+    width: 100%;
+  /* padding: 10px; */
+}
+
+.dot-icon img {
+  display: block;
+  width: 70%;
+  height: auto;
+ 
+}
+
+
+
+
+.frontBox1 .report {
+  color: var(--ash-300);
+  /* font-weight: 400; */
+}
+
+.inside-icon > img {
+  /* display: block; */
+  width: 40px;
+  height: auto;
+  object-fit: scale-down;
+  /* margin-top: -5px; */
+    
+    
+}
+
+.inside-icon {
+  /* background-color: rgb(249, 249, 249); */
+  height: 25px;
+  width: 50px;
+  overflow: hidden;
+}
+
+.inside-box-icon {
+  display: flex;
+  justify-content: flex-end;
+  width: 98%;
+  
+ 
+  /* background-color: blue; */
+  /* margin-bottom: -20px; */
+  
+}
+
+.image-container img {
+
+ width:100%;
+ height: 100%;
+ object-fit: cover;
+
+}
+
+.image-container .user-image {
+ width: 60px;
+ height: 60px;
+ margin-bottom: 20px;
+ border: 2px solid var(--white);
+ border-radius: 30px;
+ -webkit-border-radius: 30px;
+ -moz-border-radius: 30px;
+ -ms-border-radius: 30px;
+ -o-border-radius: 30px;
+}
+
+/* .active {
+  display: grid;
+} */
+
+.inactive {
+  display: none;
+}
+
+.schedule.inactive-color {
+  color: rgb(101, 101, 101);
+  background-color: rgb(30, 20, 85);
+  /* width: 10px; */
+}
+
+.schedule.active-color {
+  color: rgb(241, 241, 241);
+  background-color: var(--Blue);
+    /* width: 100px; */
+    
+}
+
+.schedule:hover {
+  color: white;
+  transition:all  0.5s;
+  -webkit-transition:all  0.5s;
+  -moz-transition:all  0.5s;
+  -ms-transition:all  0.5s;
+  -o-transition:all  0.5s;
+}
+
+
+
+/* Responsive design  ..................................................................*//* Responsive design */
+/* Responsive design  ..................................................................*//* Responsive design */
+/* Responsive design  ..................................................................*//* Responsive design */
+/* Responsive design  ..................................................................*//* Responsive design */
+/* Responsive design  ..................................................................*//* Responsive design */
+/* Responsive design  ..................................................................*//* Responsive design */
+/* Responsive design  ..................................................................*//* Responsive design */
+
+@media screen and (max-width: 768px) {
+
+
+  .time-schedule   {
+display: flex;
+justify-content: center;
+}
+
+.time-schedule   {
+margin-top: 5px;
+}
+
+.alloted-time-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+
+
+
+.frontBox1 {
+  display: flex;
+ flex-direction: row;
+ align-items: center;
+gap: 10px;
+height: 68%;
+ width: 100%;
+ padding: 20px;
+ background-color: var(--Blue);
+ border-radius: 0.58rem;
+ -webkit-border-radius: 0.58rem;
+ -moz-border-radius: 0.58rem;
+ -ms-border-radius: 0.58rem;
+ -o-border-radius: 0.58rem;
+ 
+}
+
+.name-report-wrapper {
+
+ display: flex;
+ flex-direction: column;
+ align-items: start;
+height: 100%;
+
+}
+
+.image-container .user-image {
+
+ width: 40px;
+ height: 40px;
+ margin-bottom: 20px;
+ border: 2px solid var(--white);
+ border-radius: 20px;
+ -webkit-border-radius: 20px;
+ -moz-border-radius: 20px;
+ -ms-border-radius: 20px;
+ -o-border-radius: 20px;
+
+}
+
+.image-container img {
+
+ width:100%;
+ height: 100%;
+ object-fit: cover;
+
+}
+
+.frontBox1 .username {
+  font-size: 1.6rem;
+  font-weight: 10;
+  
+   
+}
+
+
+
+
+
+}
