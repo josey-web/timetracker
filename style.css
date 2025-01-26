@@ -347,9 +347,6 @@ margin-top: 18px;
 /* Responsive design  ..................................................................*//* Responsive design */
 
 @media screen and (max-width: 768px) {
-  body {
-    background-color: aqua;
-  }
 
   .time-schedule   {
 display: flex;
