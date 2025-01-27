@@ -103,14 +103,4 @@ const scheduleData = [
   },
 ];
 
-scheduleData.forEach((dayTime) => {
-  dayTime.timeframes.daily.current;
-  dayTime.timeframes.daily.previous;
-  dayTime.timeframes.title;
-  console.log(dayTime.title);
-  console.log(dayTime.timeframes.daily.current);
-  console.log(dayTime.timeframes.daily.previous);
-});
-console.log(scheduleData[0].timeframes.daily.current);
-
 export default scheduleData;
