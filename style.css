@@ -58,10 +58,7 @@ body {
 
 .test {
   font-size: var(--fs-400);
-  /*padding: 2rem;
-  */border-radius: 0.58rem;
-  /*box-shadow: 2.5rem 3.75rem 3rem -3rem hsl(var(--clr-secondary-400) / 0.25);
-   */
+border-radius: 0.58rem;
 
 }
 
@@ -102,28 +99,14 @@ body {
 .test-Grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  /* grid-template-rows: repeat(3,auto); */
   gap: 1.5rem;
   margin: 20px;
-  /* background-color: aquamarine; */
-  /* margin: 0 auto; */
   width: 800px;
 
 }
 .grid-span-2 {
   grid-row: span 2;
 }
-/* .test-subgrid {
-  display: grid;
-    grid-template-rows: subgrid;
-    grid-row: span 2;
-    gap: 5px;
-
-} */
-
-
-
-
 
 .frontBox1 {
  display: flex;
@@ -153,10 +136,8 @@ height: 68%;
  flex-direction: column;
  text-align: left;
  align-items: start;
- 
  gap: 8px;
  height: 85%;
- /*width: 100%;*/
  padding: 20px;
  background-color: var(--DarkBlue);
  border-radius: 0.58em;
@@ -168,28 +149,12 @@ height: 68%;
 }
 
 
-/* .test-subgrid > p, h2 {
-  padding: 1rem;
-} */
-
-/* .flexbox {
-  display: flex;
-  flex-direction: column;
-  justify-self: start;
-} */
- 
-/* .alloted-time-container {
-  height: 100%;
-} */
-
-
 .time-schedule   {
 margin-top: 18px;
 }
 
 .schedule {
   font-size: 0.672rem;
-  /* background: blue; */
   color: var(--PaleBlue);
   margin-top: 5px;
   padding: 0.24rem 1.5rem;
@@ -221,26 +186,13 @@ margin-top: 18px;
    
 }
 
-/* .test .time-schedule {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  
- 
-  height: 125px;
-    padding: 1rem;
-} */
-
 
 .activity {
   display: flex;
   flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* background-color: aqua; */
     width: 100%;
-  /* padding: 10px; */
 }
 
 .dot-icon img {
@@ -255,21 +207,15 @@ margin-top: 18px;
 
 .frontBox1 .report {
   color: var(--ash-300);
-  /* font-weight: 400; */
 }
 
 .inside-icon > img {
-  /* display: block; */
   width: 40px;
   height: auto;
   object-fit: scale-down;
-  /* margin-top: -5px; */
-    
-    
 }
 
 .inside-icon {
-  /* background-color: rgb(249, 249, 249); */
   height: 25px;
   width: 50px;
   overflow: hidden;
@@ -279,10 +225,6 @@ margin-top: 18px;
   display: flex;
   justify-content: flex-end;
   width: 98%;
-  
- 
-  /* background-color: blue; */
-  /* margin-bottom: -20px; */
   
 }
 
@@ -306,10 +248,6 @@ margin-top: 18px;
  -o-border-radius: 30px;
 }
 
-/* .active {
-  display: grid;
-} */
-
 .inactive {
   display: none;
 }
@@ -317,15 +255,12 @@ margin-top: 18px;
 .schedule.inactive-color {
   color: rgb(101, 101, 101);
   background-color: rgb(30, 20, 85);
-  /* width: 10px; */
 }
 
 .schedule.active-color {
   color: rgb(241, 241, 241);
   background-color: var(--Blue);
-    /* width: 100px; */
-    
-}
+   }
 
 .schedule:hover {
   color: white;
@@ -384,7 +319,6 @@ margin-top: 5px;
 .image-container {
   width: 60px;
   height: 60px;
-
 }
 
 .frontBox1 {
@@ -392,7 +326,6 @@ margin-top: 5px;
   gap: 12px;
   flex-direction: row;
   align-items: center;
-  /* background-color: antiquewhite; */
 }
 
 .name-report-wrapper {
@@ -404,8 +337,7 @@ margin-top: 5px;
 .frontBox1 .username {
   font-size: 1.6rem;
   font-weight: 10;
-   
-}
+   }
 
 
 
